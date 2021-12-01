@@ -5,6 +5,7 @@ from SampleProjects.POMProjectDemo.Pages.LoginPage import LoginPage
 from SampleProjects.POMProjectDemo.Pages.HomePage import HomePage
 from SampleProjects.POMProjectDemo.Pages.CreateAnAccountPage import CreateAnAccountPage
 
+
 class RegisterTest(unittest.TestCase):
 
     @classmethod
@@ -42,7 +43,7 @@ class RegisterTest(unittest.TestCase):
         createanaccountpage = CreateAnAccountPage(driver)
 
         homepage.enterto_accountpage()
-        loginpage.emailcreate("POMtestgit1@testmail.com")
+        loginpage.emailcreate("POMtestgit4@testmail.com")
         loginpage.goto_emailcreate()
         createanaccountpage.filltheinfo(firstname, lastname, newpass, day, month, year, company, address1, address2, city, state, postcode, country, addinfo, homephone, mobilephone, alias)
 
